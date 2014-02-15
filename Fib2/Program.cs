@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace FIBONACCI
 {
-    class Program
+    class Program                          //Class name
     {
-        static void Main(string[] args)
-        {
+        static void Main(string[] args)    //static = declaration of type of class, void = the type of method (void = doesn't return a value), main = name of the function
+        {                                  //string = the parameter type 
             List<int> l = new List<int>(); //make a list of integers called l.
             int a = 1;                     //define them 
             int b = 0;
@@ -18,9 +18,9 @@ namespace FIBONACCI
 
             while (c <= 4000000)           //only want the c values up to 4mil
             {
-                c = a + b;                 //equation c = a + b, cycle the letters left.
-                l.Add(c);
-                a = b;
+                c = a + b;                 //equation to follow the fib sequence is c = a + b
+                l.Add(c);                  //Add c to our list after each loop
+                a = b;                     //cycle the values <--
                 b = c;
             }
 
